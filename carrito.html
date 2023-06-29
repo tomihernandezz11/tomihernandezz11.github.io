@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+        <header class="topbar">
+            <nav>
+                <a href="carrito.html">
+                    <img class="icono_topbar" src="./imagenes/icono_carrito.svg" alt="carrito">
+                </a>
+                <a href="index.html">
+                    <img class="logo_topbar" src="./imagenes/logo.svg" alt="logo de la empresa">
+                </a>
+                <a href="menu.html">
+                    <img class="icono_topbar" src="./imagenes/icono_menu.svg" alt="menu">
+                </a>
+            </nav>
+        </header>
+    <main>
+        
+
+<!-- alquiler de equipos -->
+<div class="carrito">
+</div>
+<h1 class="titulo_carrito">Carrito</h1>
+<h4 class="subtitulo_carrito1">Equipos de filmación</h4>
+<span></span>
+<article class="contenedor_carrito_alquiler">
+    <img class="img_carrito" src="./imagenes/carrito_alquiler.png" alt="Portada equipo">
+    <img class="tacho" src="imagenes/icono_borrar.svg" alt="borrar">
+        <div>
+            <h4 class="texto_carrito">Sony A7S III  -ALQUILER </h4>
+            <p>Alquiler de equipo </p>
+            <p class="precio_carrito_alquiler">$2160</p> 
+        </div>
+    </article>
+
+
+<!-- audio -->
+
+<h4 class="subtitulo_carrito1">Audios</h4>
+<span></span>
+<article class="contenedor_carrito_audio">
+    <img class="img_carrito" src="./imagenes/carrito_audio.png" alt="Portada audio">
+    <img class="tacho" src="imagenes/icono_borrar.svg" alt="borrar">
+        <div>
+            <h4 class="texto_carrito">Sirens sound - Motive St </h4>
+            <p>Audio Premium</p>
+            <p class="precio_carrito_audio">$1940</p> 
+        </div>
+    </article>
+
+<!--video-->
+<h4 class="subtitulo_carrito1">Videos</h4>
+<span></span>
+    <article class="contenedor_carrito_video">
+         <img class="img_carrito" src="./imagenes/carrito_video.png" alt="Portada video">
+         <img class="tacho" src="imagenes/icono_borrar.svg" alt="borrar">
+            <div>
+                <h4 class="texto_carrito">Nature love</h4>
+                <p>Video Premium</p>
+                 <p class="precio_carrito_video">$2000</p> 
+            </div>
+    </article>
+
+    <article class="contenedor_carrito_video">
+        <img class="img_carrito" src="./imagenes/carrito_video (2).png" alt="Portada video">
+        <img class="tacho" src="imagenes/icono_borrar.svg" alt="borrar">
+            <div>
+                <h4 class="texto_carrito">Sunset beach </h4>
+                <p>Video Premium</p>
+                <p class="precio_carrito_video">$2420</p> 
+            </div>
+        </article>
+
+        <!-- codigo de descuento -->
+
+        <form  action="codigo.php" method="get">
+            <input class="input_codigo" name="código" type="text" placeholder="Ingresá tu código de descuento">
+        </form>
+<!-- Total de compra -->
+    <div class="precio_compra">
+        <h5 class="precio_carrito">Total de compra</h5>
+        <h4 class="precio">$8520</h4>
+    </div>
+
+    <form class="checkbox_terminos" action="get">
+        <input name="terminos" type="checkbox">
+        <label class="texto_terminos" for ="terminos">He leído y acepto los términos y condiciones</label>
+    </form>
+    <div class="btn_compra">
+        <a class="texto_btncompra" href="#"> Confirmar compra </a>  
+</div>
+
+<h4 class="similares">Productos similares</h4>
+ <section class="doblecolumna">
+    <article class="dispocion-imagenes-izquierda">
+        <div class="conteiner-vertical">
+            <img class="imagen-vertical" src="imagenes/imagen1.jpg" alt="vieja casa en la montaña">
+            <img class="icono-vertical" src="imagenes/favoritoboton.svg" alt="favorito">
+            <img class="icono-vertical-fav" src="imagenes/descarga.svg" alt="descarga">
+        </div>
+        <div class="conteiner-horizontal">
+             <img class="imagen-horizontal" src="imagenes/imagen17.jpg" alt="traje de moda al aire libre">
+             <img class="icono-horizontal" src="imagenes/favoritoboton.svg" alt="favorito">
+             <img class="icono-horizontal-fav" src="imagenes/descarga.svg" alt="descarga">
+        </div> 
+        <div class="conteiner-horizontal">                  
+            <img class="imagen-horizontal" src="imagenes/imagen5.jpg" alt="playa mexicana">
+            <img class="icono-horizontal" src="imagenes/favoritoboton.svg" alt="favorito">
+            <img class="icono-horizontal-fav" src="imagenes/descarga.svg" alt="descarga">
+           </div> 
+    </article>
+
+    <article class="dispocion-imagenes-derecha">
+        
+        <div class="conteiner-vertical">
+        <img class="imagen-vertical" src="imagenes/imagen7.jpg" alt="campo en tenerife">
+        <img class="icono-vertical" src="imagenes/favoritoboton.svg" alt="favorito">
+        <img class="icono-vertical-fav" src="imagenes/descarga.svg" alt="descarga">
+    </div>
+    <div class="conteiner-vertical">
+        <img class="imagen-vertical"  src="imagenes/imagen10.jpg" alt="arquitectura italiana">
+        <img class="icono-vertical" src="imagenes/favorito.svg" alt="favorito">
+        <img class="icono-vertical-fav" src="imagenes/descarga.svg" alt="descarga">
+    </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+              <div class="footer-col">
+                <div class="logo-container">
+                  <img class="logo-footer" src="./imagenes/logo_blanco.svg" alt="Logo de la empresa">
+                </div>
+              </div>
+              <div class="footer-col">
+                <h4>Stock</h4>
+                <ul>
+                  <li><a href="#">Videos</a></li>
+                  <li><a href="imagenes.html">Imágenes</a></li>
+                  <li><a href="audio.html">Sonidos</a></li>
+                  <li><a href="plugin.html">Plug ins</a></li>
+                </ul>
+              </div>
+                <div class="footer-col">
+                    <h4>Alquiler</h4>
+                    <ul>
+                        <li><a href="equipo.html">Equipos de video</a></li>
+                        <li><a href="equipo.html">Equipos de audio</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Perfil</h4>
+                    <ul>
+                        <li><a href="perfil.html">Iniciar sesión</a></li>
+                        <li><a href="perfil.html">Favoritos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Comunidad</h4>
+                    <ul>
+                        <li><a href="comunidad.html">Foros</a></li>
+                        <li><a href="comunidad.html">Preguntas frecuentes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Editor online</h4>
+                    <ul>
+                        <li><a href="editor.html">Probar beta</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
